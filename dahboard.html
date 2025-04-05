@@ -34,7 +34,7 @@
   </table>
 
   <script>
-    const API_URL = "YOUR_APPS_SCRIPT_URL";
+    const API_URL = "https://script.google.com/macros/s/AKfycbwdu__0jfeikqJ5V2wCV-fpTGJYyQgNbYMSMcERZ976f7C12ewnm1u4NYEsWg-mJNly/exec";
     
     async function loadLeaves() {
       try {
@@ -55,10 +55,10 @@
             </tr>
           `).join('');
         } else {
-          console.error("Error loading leaves:", result.error);
+          alert("Error loading leaves:", result.error);
         }
       } catch (error) {
-        console.error("Network error:", error);
+        alert("Network error:", error);
       }
     }
     
